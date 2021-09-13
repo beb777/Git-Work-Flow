@@ -1,0 +1,8 @@
+Dracula
+Dark theme for Gnome Terminal
+for ubuntu `sudo apt-get install dconf-cli`
+for other distribute 		 git clone https://github.com/dracula/gnome-terminal
+	then change dir		 cd gnome-terminal
+installthe script		./install.sh
+
+
