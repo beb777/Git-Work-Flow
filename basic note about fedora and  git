@@ -1,0 +1,93 @@
+
+4. Install GNOME Tweaks
+
+sudo dnf install gnome-tweak-tool
+
+3. Enable RPM Fusion Repository
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
+8. Install additional multimedia codecs
+sudo dnf groupupdate multimedia --setop="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+sudo dnf groupupdate sound-and-video
+9. TLP for Battery health management
+
+sudo dnf install tlp tlp-rdw
+
+
+If you have a Thinkpad laptop, you may consider running the below commands for Thinkpad specific packages for TLP which gives you more info and control on your battery.
+sudo dnf install https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install https://repo.linrunner.de/fedora/tlp/repos/releases/tlp-release.fc$(rpm -E %fedora).noarch.rpm
+
+sudo dnf install kernel-devel akmod-acpi_call akmod-tp_smapi
+sudo tlp-stat -b
+10. Install Additional Desktop Environments
+
+It is very easy to install other desktop environments in Fedora when you are running the GNOME version. The core is already installed for you, hence you can easily install the basic framework for other desktops.
+
+For example, if you like to install KDE Plasma or XFCE desktop with Fedora 34 – you do not need to download and install the entire respective Fedora Spin .iso file. You can easily follow this method to install an additional desktop environment. Open a terminal and run the below commands.
+
+First, run below to check the available environment package
+ sudo dnf grouplist -v
+Now you can install your favorite desktop using the name below.
+
+sudo dnf install [environment name]
+sudo dnf install @cinnamon-desktop-environment
+
+Configure DNF for faster download
+
+The dnf package manager provides various config options which help you to download faster or update your system faster. The configuration options are described here.
+
+One of the options I would suggest is the max_parallel_downloads option. This takes a number from 3 to 20 – which means that many numbers package download can be done using dnf.
+
+To do that, open the config file via below command and add the switch as below. 
+
+
+
+sudo nano /etc/dnf/dnf.conf
+max_parallel_downloads=10
+
+
+sudo yum install neovim
+sudo dnf install vim-enhanced
+
+
+
+git- initalize https://www.youtube.com/watch?v=QqP7YZlZEOo
+- git init
+- git add
+- git commit 
+- git status
+- git log
+- git diff
+
+git - branch https://www.youtube.com/watch?v=JTE2Fn_sCZs
+
+
+Commands Covered:
+- git branch
+- git checkout
+- git checkout -b
+- git commit -am
+…or create a new repository on the command line
+
+echo "# Git-Work-Flow" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/beb777/Git-Work-Flow.git
+git push -u origin main
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/beb777/Git-Work-Flow.git
+git branch -M main
+git push -u origin main
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
+
+
