@@ -18,3 +18,5 @@ To get started configuring starship, create the following file: ~/.config/starsh
 
 mkdir -p ~/.config && touch ~/.config/starship.toml
 
+ADDITIONAL VIDEO 
+https://www.youtube.com/watch?v=5b-xQkRWHjQ
