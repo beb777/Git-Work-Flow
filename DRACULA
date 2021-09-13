@@ -5,4 +5,16 @@ for other distribute 		 git clone https://github.com/dracula/gnome-terminal
 	then change dir		 cd gnome-terminal
 installthe script		./install.sh
 
+INSTALL STARSHIP PROMT  https://starship.rs/
+sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+
+adding the line below at the end of .bashrc script
+eval "$(starship init bash)"
+
+
+Configuration   STARSHIP https://starship.rs/config/#prompt
+
+To get started configuring starship, create the following file: ~/.config/starship.toml.
+
+mkdir -p ~/.config && touch ~/.config/starship.toml
 
