@@ -52,7 +52,7 @@ max_parallel_downloads=10
 sudo yum install neovim
 sudo dnf install vim-enhanced
 
-
+setup ssh for github https://www.youtube.com/watch?v=3aKda-oXWc8
 
 git- initalize https://www.youtube.com/watch?v=QqP7YZlZEOo
 - git init
