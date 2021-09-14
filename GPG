@@ -1,0 +1,8 @@
+gPGG 
+gpg --full-gen-key 
+NAME :
+EMAIL:
+PASSWORD:
+
+PASS INIT
+
